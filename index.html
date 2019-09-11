@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Currently my website is just a webpage version of my resume with more details.">
+<!--        Reset margins, paddings etc. to a normalized situation that is identical to all browsers. -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+<!--        Fuild grid for building a responsive website. The concept is all layout elements are sized in a relative units, such as percentages, instead of  absolute units like pixels. -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+<!--        Google font is here.-->
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<!--        Social media icons come from here. -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        
+        
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+
+
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/resources/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/resources/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        <title>Monnan's Web</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="logo" class="logo">
+                    <img src="resources/img/logo.png" alt="logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills and Projs</a></li>
+                        <li><a href="#employ_hist">Employment History</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Hello, I'm <span style="color:#f6b93b">Monnan How</span>.<br>Welcome to my web.</h1>
+<!--                a tag is an inline elememt, which means that it doesn't have padding property and new line following after it by default. To make a tag a button we need to add a btn selector to give it padding property. -->
+                <a class="btn btn-full js--scroll-to-plans" href="resources/Monnan_CV.pdf" download>Get My Resume</a>
+            </div>
+            
+        </header>
+<!--        section-features add margin to the bottom.-->
+        <section class="section-features js--section-features" id="about">
+            <div class="row">
+                <h2>about me</h2>
+                <p class="long-copy"><cite><img src="resources/img/head.jpg" alt="Author Picture">Monnan How (Ronan)</cite>
+                </p>
+            </div>
+            <div class="row">
+                <p class="long-copy">
+                   
+                    Familiar with SDLC, OOD/OOP, software testing (white box/structural testing and black box/functional testing), database, data structure and algorithms and statistical modeling. Special interest in machine learning, data science and artificial intelligence related technologies.
+                     
+                </p>
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/mon-nan-ronan-how-21a9a9162/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                    <li><a href="https://github.com/nanmon2001/" target="_blank"><i class="ion-social-github"></i></a></li>
+                    <li><a href="#">
+                       <div class="tooltip">
+                        <span class="tooltiptext">copy to clipboard</span>
+                        <span onclick="copyToClipboard('#myskype')">
+                            <i class="ion-social-skype"></i>
+                        </span>
+                        </div>
+                    </a></li>
+
+                    <li><a href="#">
+                      <div class="tooltip">
+                       <span class="tooltiptext">copy to clipboard</span>
+                        <span onclick="copyToClipboard('#myemail')">
+                            <i class="ion-ios-email"></i>
+                        </span>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+
+        </section>
+        
+        <section class="section-features" id="skills" style="background:#f5f6fa">
+            <div class="row">
+                <h2>My skills</h2>
+            </div>
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <h3 style="text-align: left">Program languages</h3>
+                    <ul class="skill_list">
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>R</li>
+                    </ul>
+                    <ul class="level_list">
+                        <li>****</li>
+                        <li>**</li>
+                        <li>**</li>
+                        <li>*</li>
+                        <li>*</li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <h3 style="text-align: left">Other languages</h3>
+                    <ul class="skill_list">
+                        <li>SQL</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bash</li>
+                    </ul>
+                    <ul class="level_list">
+                        <li>***</li>
+                        <li>**</li>
+                        <li>**</li>
+                        <li>**</li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <h3 style="text-align: left">Frameworks</h3>
+                    <ul class="skill_list">
+                        <li>Django</li>
+                        <li>Hadoop</li>
+                        <li>Hive</li>
+                    </ul>
+                    <ul class="level_list">
+                        <li>*</li>
+                        <li>*</li>
+                        <li>*</li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <h3 style="text-align: left">Office Tools</h3>
+                    <ul class="skill_list">
+                        <li>Excel</li>
+                        <li>PowerPoint</li>
+                    </ul>
+                    <ul class="level_list">
+                        <li>***</li>
+                        <li>**</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="long-copy">
+            Stars indicates the level of confidence I feel for my skill on the scale of 5.
+            </p> 
+        </section>
+        
+        <section class="section-features" id="skills">
+            <div class="row">
+                <h2>My projects</h2>
+            </div>
+            <div class="row">
+                <h3>Django Blog</h3>
+                <p class="long-copy">
+                   A blog that is built on Django framework, currently it is still under construction.
+                </p>
+            </div>
+            <div class="row">
+                <h3>My Web</h3>
+                <p class="long-copy">
+                   This is the website that you are currently visiting. A responsive website simply using HTML5, CSS3 and little bit Javasrcipt (jQuery).
+                </p>
+            </div>
+            <div class="row">
+                <h3>LA Job Bulliten Analysis in Kaggle</h3>
+                <p class="long-copy">
+                   Doing EDA on 683 job post text files. One major challenge is to turn unstructured data into table format (structured), extracting 25 or more features from a job post correctly for further data analysis to gain insights and make suggestions. Use Python libraries including pandas and re for data extraction/pre-cleaning and matplotlib, seaborn for data visualization.
+                </p>
+            </div>
+            <div class="row">
+                <h3>Artificial Intelligence Pacman game (in-class)</h3>
+                <p class="long-copy">
+                   Implement DFS, BFS, UCS, A*, MinMax, alpha-beta pruning, Q-Learning (Reinforcement Learning/Machine Learning) algorithms to solve differnet kinds problems in the game. Final goal is to build a intelligent pacman agent that know how to learn to maximize the score in a game. This is basically an algorithm and data structure chellange.
+                </p>
+            </div>
+            <div class="row">
+                <h3>Compiler Construction (in-class)</h3>
+                <p class="long-copy">
+                    Constructed a C compiler using lexer and parser such as GNU flex, yacc/bison (C programming). The compiler is build and test on a Linux machine.
+                </p>
+            </div>
+            <div class="row">
+                <h3>Billing Interface Linkable Library (in-class)</h3>
+                <p class="long-copy">
+                    Group project that practice SDLC. We build an API to query and update student records database using Java. We write SRS and test documentation and use Junit for software unit testing and covconducterage rate assessment.
+                </p>
+            </div>
+            
+        </section>
+        
+        <section class="section-features js--section-plans" id="employ_hist" style="background:#f5f6fa">
+            <div class="row">
+                <h2>My Employment History</h2>
+            </div>
+            <div class="row">
+                <h3>Data Modeling Intern, Aug 2019 – present</h3>
+                <h3 style="font-size: 100%"><i>uPI Semiconductor Corp., Milpitas, CA</i></h3>
+
+                <p class="long-copy">
+                    Write programs to help data processing in intermediate stages (data format changing, handle missing data).
+                </p>
+            </div>
+            <div class="row">
+                <h3>Process Engineer, Oct 2013 – Oct 2016</h3>
+                <h3 style="font-size: 100%"><i>Taiwan Semiconductor Manufacturing Company (TSMC), Tainan, Taiwan</i></h3>
+
+                <p class="long-copy">
+                   Specialize in Epitaxial Growth. Daily activities including reviewing process tool and metrology SPC chart and identify abonormal trend or pattern, trouble shooting abnormal quality issues. <br>Depend on season goal, main goal could either be boost process throughput by certifying new process/metrology tools or conduct quality improvement CIP experiments, or come up with cost down suggestions. My major accomplishments including:<br>
+                    1. Initiated and build a dashboard to monitor bottle neck recipe availability that saved 80% of a Chief Process Engineer time on recipe management.<br> 2. Solved a production line quality issue through data analysis and reduce 20% OOC (out of control rate).<br> 3. Successfully predicted process outcome base on process parameters with 80% accuracy.
+                </p>
+
+            </div>
+        </section>
+        
+        <section class="section-features js--section-features" id="education">
+            <div class="row">
+                <h2>My Education</h2>
+            </div>
+            <div class="row">
+                <h3>Master of Science in Computer Science, Aug 2017 - May 2019</h3>
+                <h3 style="font-size: 100%"><i>University of South Carolina, Columbia, SC</i></h3>
+                <p class="long-copy">Study focus on software development and data science. Complete courses include: Software Engineering, Software Architecture, Software Testing and Quality Assurance, Analysis of Algorithms, Compilier Construction, Aritificial Intelligence, Big Data Analytics.</p>
+            </div>
+            <div class="row">
+                <h3>Master of Science in Material Science and Engineering, Sep 2010 - Jun 2012</h3>
+                <h3 style="font-size: 100%"><i>National Cheng Kung University, Tainan, Taiwan</i></h3>
+                <p class="long-copy">Study focus on light-weight metal material process technologies to improve it's mechanical properties under high temperature. Utilizing Rapid solidification, Spark Plasma Sintering (SPS), silicon doping to create secondary phase participates and squeezing process. </p>
+            </div>
+
+        </section>
+        <section class="section-features js--section-features" id="other" style="background:#f5f6fa">
+            <div class="row">
+                <h2>Others</h2>
+            </div>
+            <div class="row">
+               <p class="long-copy">
+                   The following content has nothing to do with my resume. It's' just me playing with my website. Feel free to take a glance if your interested. Following are some pictures from my country Taiwan that I got it from a incredible open source image website: <a href="https://unsplash.com/t/film" target="_blank">unsplash</a>. 
+               </p>
+            </div>
+        </section>
+        <section class="section-taiwan">
+            <ul class="taiwan-showcase clearfix">
+                <li>
+                    <figure class="taiwan-photo">
+                        <img src="resources/img/1.jpg" alt="Taiwan image 1">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="taiwan-photo">
+                        <img src="resources/img/2.jpg" alt="Taiwan image 2">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="taiwan-photo">
+                        <img src="resources/img/3.jpg" alt="Taiwan image 3">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="taiwan-photo">
+                        <img src="resources/img/4.jpg" alt="Taiwan image 4">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="taiwan-showcase clearfix">
+                <li>
+                    <figure class="taiwan-photo">
+                        <img src="resources/img/5.jpg" alt="Taiwan image 5">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="taiwan-photo">
+                        <img src="resources/img/6.jpg" alt="Taiwan image 6">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="taiwan-photo">
+                        <img src="resources/img/7.jpg" alt="Taiwan image 7">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="taiwan-photo">
+                        <img src="resources/img/8.jpg" alt="Taiwan image 8">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="section-form">
+            <div class="row">
+                <h2>Want to leave me a message?</h2>
+            </div>
+            <div class="row">
+               <p class="long-copy">(Demo only, this is not going to send me any notice, if you really want to leave me a message please send an email.)
+               </p>
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="guestemail">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="guestemail" id="guestemail" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Company</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="company" id="company" placeholder="(Optional)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </section>
+        
+        <footer>
+           
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">Back to top</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                       <p id="myemail" style="display: none">nanmon2001@gmail.com</p>
+                       <p id="myskype" style="display: none">nanmon2001</p>
+                    <li><a href="https://www.linkedin.com/in/mon-nan-ronan-how-21a9a9162/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                    <li><a href="https://github.com/nanmon2001/" target="_blank"><i class="ion-social-github"></i></a></li>
+                    <li><a href="#">
+                       <div class="tooltip">
+                        <span class="tooltiptext">copy to clipboard</span>
+                        <span onclick="copyToClipboard('#myskype')">
+                            <i class="ion-social-skype"></i>
+                        </span>
+                        </div>
+                    </a></li>
+
+                    <li><a href="#">
+                      <div class="tooltip">
+                       <span class="tooltiptext">copy to clipboard</span>
+                        <span onclick="copyToClipboard('#myemail')">
+                            <i class="ion-ios-email"></i>
+                        </span>
+                        </div>
+                    </a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                     &copy; Website Initiated in Sep 2019
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61026110-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+<!--    Pop email/skype ID and paste to clipboard -->
+    <script>
+        function copyToClipboard(element) {
+          var $temp = $("<input>");
+          $("body").append($temp);
+          $temp.val($(element).text()).select();
+          document.execCommand("copy");
+          $temp.remove();
+        }
+    </script>
+
+    
+    </body>  
+    
+</html>
